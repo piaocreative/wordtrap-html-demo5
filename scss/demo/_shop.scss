@@ -1,0 +1,208 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+.category {
+	position: relative;		
+	margin-bottom: $spacer * 1.875;
+
+	@include transition(all 0.5s ease-in-out);
+	
+	&:hover {
+		@include translateY(-1.875rem);
+	}
+
+	.category-desc {
+		position: absolute;
+		left: 0;
+		top: 2rem;		
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: $spacer * 1.875;
+	position: relative;
+
+	.product-image {
+		position: relative;
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-details {
+		padding: $spacer * 1.25 0;		
+	}
+
+	.product-price {
+		color: #979797;
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1;
+	}
+
+	.product-title {
+		color: $heading-color;
+		font-family: $body-font;
+		font-size: 1.1875rem;
+		font-weight: 300;
+		line-height: $line-height-sm;
+		margin-bottom: $spacer * 0.5;
+	}
+
+	.product-rating {
+		line-height: 1;
+		margin-bottom: $spacer * 0.5;
+
+		i {
+			color: $theme-color;
+			font-size: 0.625rem;
+
+			&.empty {
+				color: rgba($theme-color, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		background-color: $white;
+		position: absolute;
+		right: 1px;
+		top: 1px;
+		padding: 1rem 0.125rem;
+		opacity: 0;					
+		z-index: 2;
+
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.add-to-cart,
+	.add-to-wishlist {
+		display: inline-block;
+		color: $heading-color;
+		padding: 0 $spacer * 0.875;
+
+		@include transition(all 0.3s ease-in-out);		
+
+		&:hover {
+			color: $secondary;
+		}
+
+		i {
+			font-size: 1.375rem;
+			line-height: 1;
+		}
+	}
+
+	.onsale,
+	.onnew {
+		background-color: $white;
+		color: $dark;
+		font-size: 0.875rem;
+		font-weight: 600;
+		line-height: $line-height-lg;
+		text-transform: uppercase;
+		padding: $spacer $spacer * 5;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.onsale {
+		color: $secondary;
+	}
+
+	&:hover {
+		.product-btns {
+			opacity: 1;
+		}
+
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+
+		.onsale,
+		.onnew {
+			opacity: 0;
+		}
+	}
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+.ads {
+	position: relative;
+	display: block;
+
+	@include media-breakpoint-down(xl) {
+		margin-bottom: 1.875rem;
+	}
+
+	.ads-bg {
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;			
+		}
+	}
+
+	.ads-body {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&.ads1 {
+		.ads-body {
+			padding: 5rem;
+
+			@include media-breakpoint-down(xxl) {
+				padding: 4rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				h3 {
+					
+				}
+			}
+		}		
+	}
+}
