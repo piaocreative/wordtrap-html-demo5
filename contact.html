@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
 	============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -10,7 +9,7 @@
 
     <!-- Fonts
     ============================================= -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Fontawesome
@@ -23,9 +22,9 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo5 | Saler</title>
+    <title>Demo5 | Wordtrap</title>
 </head>
-<body id="demo5">
+<body id="contact-page">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -42,7 +41,7 @@
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/logo.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Wordtrap Logo">
                     </a>
                     
                     <!-- Navbar Toggler
@@ -89,35 +88,74 @@
                                 <a href="#" class="nav-link">
                                     <span data-cart-items="2">
                                         <i class="fas fa-shopping-cart"></i>
-                                    </span>                                            
+                                    </span>
                                 </a>
                             </li>
                         </ul><!-- #top-btns -->
 
                         <!-- Primary Navigation
                         ============================================= -->
-                        <ul id="primary-menu" class="navbar-nav">
+                        <ul id="primary-menu" class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
 
-                    </div><!-- #navbarCollapse -->                   
+                    </div><!-- #navbarCollapse -->
 
                 </div>
 
@@ -127,9 +165,9 @@
 
         <!-- Content
 		============================================= -->
-		<section id="content">
+		<main id="content">
 
-            <div class="content-wrap">
+            <div class="page-content">
 
                 <!-- Contact
                 ============================================= -->
@@ -137,27 +175,13 @@
 
                     <div class="container">
 
-                        <div class="row mb-5">
-
-                            <div class="col-lg-8">
-
-                                <div id="page-title">
-                                    <h2 class="title">Contact Us</h2>
-                                    <span style="top: 2.5rem;">Success way of</span>
-                                </div>
-
-                            </div>
-
-                        </div>                        
-    
+                        <div id="page-title" class="mb-5">
+                            <h2 class="title">Contact Us<hr><span>Success way of</span></h2>
+                        </div>
                         <div class="row pt-4">
-    
                             <div class="row mb-4">
-    
                                 <div class="col-lg-6 offset-lg-1">
-
                                     <h4 class="pt-4">Our Office</h4>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="fas fa-map-marker-alt"></i>
@@ -167,7 +191,6 @@
                                             <span>1234 Street Name, City Name, United States</span>
                                         </div>
                                     </div>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="fa fa-phone"></i>
@@ -177,19 +200,16 @@
                                             <span>(123) 456-789</span>
                                         </div>
                                     </div>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </div>
                                         <div class="icon-header">
                                             <h4>Email:</h4>
-                                            <span>mail@example.com</span>
+                                            <span>info@wordtrap.com</span>
                                         </div>
                                     </div>
-        
                                     <h4 class="pt-4">Business Hours</h4>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="far fa-clock"></i>
@@ -199,7 +219,6 @@
                                             <span>9am to 5pm</span>
                                         </div>
                                     </div>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="far fa-clock"></i>
@@ -209,7 +228,6 @@
                                             <span>9am to 2pm</span>
                                         </div>
                                     </div>
-        
                                     <div class="icon-box">
                                         <div class="icon-wrapper">
                                             <i class="far fa-clock"></i>
@@ -219,71 +237,48 @@
                                             <span>Closed</span>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <div class="col-lg-4 pt-5 pt-lg-0">
-
-                                    <img src="images/office1.png" alt="Contact Us" class="img-fluid">
-                                
+                                    <img src="images/pages/office1.png" alt="Contact Us" class="img-fluid">
                                 </div>
-
                             </div>
-
                             <div class="row pt-5">
-
                                 <div class="col-lg-4 offset-lg-1">
-
-                                    <img src="images/office2.png" alt="Contact Us" class="img-fluid">
-
+                                    <img src="images/pages/office2.png" alt="Contact Us" class="img-fluid">
                                 </div>
-
                                 <div class="col-lg-4 offset-lg-2 pt-5 pt-lg-0">
-                                    
                                     <form class="contact-form" action="php/contact-form.php" method="POST" novalidate="novalidate">
-                                        <!-- <div class="contact-form-success alert alert-success d-none mt-4">
-                                            <strong>Success!</strong> Your message has been sent to us.
-                                        </div>
-        
-                                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                                            <strong>Error!</strong> There was an error sending your message.
-                                            <span class="mail-error-message text-1 d-block"></span>
-                                        </div> -->
-        
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormName">Your Name</label>
                                             <div class="required-field">
                                                 <input type="text" value="" class="form-control" name="name" id="contactFormName" required>
-                                            </div>                                        
+                                            </div>
                                         </div>									
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormEmail">Your Email Address</label>
                                             <div class="required-field">
                                                 <input type="email" value="" class="form-control" name="email" id="contactFormEmail" required>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormSubject">Subject</label>
                                             <div class="">
                                                 <input type="text" value="" class="form-control" name="subject" id="contactFormSubject">
-                                            </div>                                        
+                                            </div>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormMsg">Message</label>
                                             <div class="">
                                                 <textarea maxlength="5000" rows="8" class="form-control" name="message" id="contactFormMsg"></textarea>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                         <div class="mb-3">
                                             <input type="submit" value="Send" class="btn btn-primary text-uppercase" data-loading-text="Loading...">
                                         </div>
                                     </form>
-        
                                 </div>
-        
                             </div>
-    
-                        </div>                    
+                        </div>
     
                     </div>
 
@@ -293,13 +288,13 @@
                 ============================================= -->
                 <div class="map-wrapper">
                     <div class="map">
-                        <img src="images/map.png" class="img-fluid">
+                        <img src="images/pages/map.png" class="img-fluid">
                     </div>
                 </div>
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->
@@ -312,17 +307,14 @@
                 <div class="container">
 
                     <div class="row">
-
                         <div class="col-lg-7 d-flex justify-content-between">
-
                             <div class="widget widget-custom-html">
                                 <h4 class="widget-title text-body text-uppercase">Our Address</h4>
                                 <div class="widget-content">
                                     <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
                                     <p class="mb-0">5686 Edverano Center</p>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="widget widget-social text-end">
                                 <h4 class="widget-title text-body text-uppercase">Follow Us</h4>
                                 <div class="widget-content">
@@ -333,21 +325,16 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="col-lg-5">
-
                             <div class="widget widget-custom-html text-end">
                                 <h4 class="widget-title text-body text-uppercase">Call Now</h4>
                                 <div class="widget-content">
                                     <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
                                     <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                </div>                                    
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
 
                 </div>
@@ -360,10 +347,8 @@
 
                 <div class="container">
 
-                    <div class="row">               
-                        
+                    <div class="row">
                         <div class="col-lg-7">
-
                             <div class="widget widget-links mb-4">
                                 <div class="widget-content">
                                     <ul>
@@ -372,11 +357,9 @@
                                         <li><a href="#">Order Tracking</a></li>
                                         <li><a href="#">Shipping & Delivery</a></li>
                                     </ul>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="col d-flex align-items-end justify-content-between pt-2">
-
                                 <div class="widget widget-payment mt-3">
                                     <div class="widget-content">
                                         <div class="payments">
@@ -384,19 +367,13 @@
                                             <span class="payment-icon paypal"></span>
                                             <span class="payment-icon mastercard"></span>
                                             <span class="payment-icon express"></span>
-                                        </div>                                    
+                                        </div>
                                     </div>
-                                    
                                 </div>
-
                                 <p id="copyrights" class="text-end mb-0">&copy; Copyrights 2021. All Rights Reserved.</p>
-
                             </div>
-                            
                         </div>
-
-                        <div class="col-lg-5">                            
-                                    
+                        <div class="col-lg-5">
                             <div class="widget widget-subscribe">
                                 <h6 class="widget-title text-white text-uppercase lh-lg mb-4">Subscribe to our the free newslettr</h6>
                                 <div class="widget-content">
@@ -408,11 +385,9 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>                                    
-                            </div>        
-                            
+                                </div>
+                            </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -422,11 +397,6 @@
         </footer><!-- #footer -->
 
     </div>
-
-    <!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
 
     <!-- External JavaScripts
 	============================================= -->

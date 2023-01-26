@@ -160,4 +160,31 @@
 			}
 		}
 	}
+
+	// Widget - Latest Comments
+	&.widget-latest-comments {
+		.comment-author {
+			color: $secondary;
+		}
+
+		.comment-link {
+			color: $theme-color;
+		}
+	}
+
+	// Widget - Post Categories
+	&.widget-post-categories {
+		a {
+			color: $theme-color;
+		}
+	}
+
+	// Widget - Search
+	&.widget-search {
+		.search-form {
+			.btn {
+				padding: 1.125rem;
+			}
+		}
+	}
 }

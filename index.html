@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
 	============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -10,12 +9,17 @@
 
     <!-- Fonts
     ============================================= -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Fontawesome
 	============================================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+    <!-- Slick
+    ============================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Stylesheets
 	============================================= -->
@@ -23,7 +27,7 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo5 | Saler</title>
+    <title>Demo5 | Wordtrap</title>
 </head>
 <body id="demo5">
 
@@ -42,7 +46,7 @@
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/logo.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Wordtrap Logo">
                     </a>
                     
                     <!-- Navbar Toggler
@@ -89,35 +93,74 @@
                                 <a href="#" class="nav-link">
                                     <span data-cart-items="2">
                                         <i class="fas fa-shopping-cart"></i>
-                                    </span>                                            
+                                    </span>
                                 </a>
                             </li>
                         </ul><!-- #top-btns -->
 
                         <!-- Primary Navigation
                         ============================================= -->
-                        <ul id="primary-menu" class="navbar-nav">
+                        <ul id="primary-menu" class="navbar-nav mx-auto">
                             <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
 
-                    </div><!-- #navbarCollapse -->                   
+                    </div><!-- #navbarCollapse -->
 
                 </div>
 
@@ -127,25 +170,77 @@
 
         <!-- Content
 		============================================= -->
-		<section id="content">
+		<main id="content">
 
-            <div class="content-wrap">
+            <div class="page-content">
 
                 <!-- Banner
-                ============================================= -->
-                <section id="banner" class="home-banner">
-
-                    <div class="banner-wrap">
-
+				============================================= -->
+				<section id="home-banner" class="banner">
+					<div id="banner-slider">
+						<div class="banner-slide">
+                            <div class="row g-0">
+                                <div class="col-lg-6 left-col">
+                                    <img src="images/banner/home-banner1_1.jpg" alt="Banner Image">
+                                </div>
+                                <div class="col-lg-6 right-col">
+                                    <img src="images/banner/home-banner1_2.jpg" alt="Banner Image">
+                                </div>
+                            </div>							
+						</div>
+                        <div class="banner-slide">
+                            <div class="row g-0">
+                                <div class="col-lg-6 left-col">
+                                    <img src="images/banner/home-banner2_1.jpg" alt="Banner Image">
+                                </div>
+                                <div class="col-lg-6 right-col">
+                                    <img src="images/banner/home-banner2_2.jpg" alt="Banner Image">
+                                </div>
+                            </div>							
+						</div>
+                        <div class="banner-slide">
+                            <div class="row g-0">
+                                <div class="col-lg-6 left-col">
+                                    <img src="images/banner/home-banner3_1.jpg" alt="Banner Image">
+                                </div>
+                                <div class="col-lg-6 right-col">
+                                    <img src="images/banner/home-banner3_2.jpg" alt="Banner Image">
+                                </div>
+                            </div>							
+						</div>
+					</div>
+                    <div class="banner-content">
                         <div class="container">
-
-                            <!-- Add here revolution slider -->
-
+                            <div class="row g-0">
+                                <div class="col-12 offset-lg-6 col-lg-6">
+                                    <div class="banner-content-wrapper">
+                                        <h2 class="title">New<span><hr><a href="#">Shop Now!</a></span></h2>
+                                        <h2 class="title">Collection</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
+                    </div>
+                    <div class="banner-socials">
+                        <div class="container">
+                            <ul class="socials">
+                                <li>
+                                    <span>Follow Us</span>
+                                </li>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                </section><!-- #banner -->
+				</section><!-- #banner -->
 
                 <!-- Features
                 ============================================= -->
@@ -154,11 +249,8 @@
                     <div class="container">
 
                         <div class="row">
-
                             <div class="col">
-
                                 <div class="feature-boxes d-flex flex-column flex-lg-row">
-
                                     <div class="fbox text-center">
                                         <div class="fbox-icon">
                                             <img src="images/icons/fbox_icon.png" alt="Feature Box Icon" class="img-fluid">
@@ -166,7 +258,6 @@
                                         <h5 class="mb-1 body-font fw-normal">Free Shipping on orders above 99$</h5>
                                         <span class="h6 body-font text-body fw-light lh-1">Lorem ipsum dolor sit amet</span>
                                     </div>
-
                                     <div class="fbox text-center">
                                         <div class="fbox-icon">
                                             <img src="images/icons/fbox_icon.png" alt="Feature Box Icon" class="img-fluid">
@@ -174,7 +265,6 @@
                                         <h5 class="mb-1 body-font fw-normal">Gifts for regular customers</h5>
                                         <span class="h6 body-font text-body fw-light lh-1">Lorem ipsum dolor sit amet</span>
                                     </div>
-
                                     <div class="fbox text-center">
                                         <div class="fbox-icon">
                                             <img src="images/icons/fbox_icon.png" alt="Feature Box Icon" class="img-fluid">
@@ -182,11 +272,8 @@
                                         <h5 class="mb-1 body-font fw-normal">100% money back guarantee</h5>
                                         <span class="h6 body-font text-body fw-light lh-1">Lorem ipsum dolor sit amet</span>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -198,9 +285,7 @@
                 <div class="container">
 
                     <div class="row">
-
                         <div class="col-sm-6 col-lg-3">
-
                             <div class="category">
                                 <a href="#">
                                     <div class="category-image">
@@ -212,11 +297,8 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
-
                         <div class="col-sm-6 col-lg-3">
-
                             <div class="category">
                                 <a href="#">
                                     <div class="category-image">
@@ -227,12 +309,9 @@
                                         <span class="h6 body-font text-body fw-light lh-1">153</span>
                                     </div>
                                 </a>
-                            </div>    
-
+                            </div>
                         </div>
-
                         <div class="col-sm-6 col-lg-3">
-
                             <div class="category">
                                 <a href="#">
                                     <div class="category-image">
@@ -244,25 +323,20 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
-
                         <div class="col-sm-6 col-lg-3">
-
                             <div class="category">
                                 <a href="#">
                                     <div class="category-image">
                                         <img src="images/shop/category4.png" alt="Category Image" class="img-fluid w-100">
                                     </div>
                                     <div class="category-desc text-center">
-                                        <h5 class="mb-1 body-font fw-normal">Dress</h5>
+                                        <h5 class="mb-1 body-font fw-normal">Dress lace up 2021 summer women</h5>
                                         <span class="h6 body-font text-body fw-light lh-1">93</span>
                                     </div>
                                 </a>
                             </div>
-
                         </div>
-
                     </div>
 
                 </div><!-- Product Categories -->
@@ -276,15 +350,12 @@
                         <div class="heading-block text-center">
                             <h3 class="title">Featured Products</h3>
                         </div>
-
                         <div class="row">
-
                             <div class="col-xl-8">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product1_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product1_2.png" alt="Product Image" class="img-fluid"></a>                                        
+                                        <a href="#"><img src="images/shop/product1_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product1_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details d-flex justify-content-between">
                                         <div>
@@ -295,7 +366,7 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </div>
-                                            <h3 class="product-title"><a href="#">Dress</a></h3>                                            
+                                            <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
                                         </div>
                                         <div class="product-price">$149</div>
                                     </div>
@@ -304,15 +375,12 @@
                                         <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product2_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product2_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product2_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product2_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -322,23 +390,20 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
-                                        <div class="product-price">$149</div>            
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
+                                        <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
                                         <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
                                         <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product3_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product3_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product3_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product3_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -348,23 +413,20 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
-                                        <div class="product-price">$149</div>                                        
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
+                                        <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
                                         <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
                                         <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product4_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product4_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product4_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product4_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -374,23 +436,20 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
-                                        <div class="product-price">$149</div>                                        
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
+                                        <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
                                         <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
                                         <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product5_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product5_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product5_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product5_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -400,17 +459,15 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
-                                        <div class="product-price">$149</div>                                        
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
+                                        <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
                                         <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
                                         <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -419,26 +476,17 @@
 
                 <!-- Ads
                 ============================================= -->
-                <div class="container">                      
+                <div class="container">
                     
                     <div class="py-5 ads" style="background-image: url(images/ads/bigsale_ads.png);">
-
                         <div class="row">
-
                             <div class="col text-center">
-
                                 <h3 class="mb-2">Big Sale</h3>
-
                                 <p class="h3 text-secondary">70%</p>
-
-                                <p class="fw-light text-heading mb-3">Lorem ipsum dolor sit amet</p>                                
-
+                                <p class="fw-light text-heading mb-3">Lorem ipsum dolor sit amet</p>
                                 <a href="#" class="h6 text-secondary body-font fw-semi-bold mb-0 text-uppercase">Shop Now!</a>
-
                             </div>
-
                         </div>
-
                     </div>
 
                 </div><!-- Ads -->
@@ -450,13 +498,11 @@
                     <div class="container">
 
                         <div class="row">
-                            
                             <div class="col-md-6 col-xl-4 order-1 order-xl-0">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product6_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product6_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product6_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product6_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -466,7 +512,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
                                         <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
@@ -475,19 +521,16 @@
                                     </div>
                                     <div class="onsale">-20% off</div>
                                 </div>
-
                             </div>
-
                             <div class="col-xl-8 order-0 order-xl-1">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product7_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product7_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product7_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product7_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details d-flex justify-content-between">
                                         <div>
-                                            <h3 class="product-title"><a href="#">Dress</a></h3>
+                                            <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
                                             <div class="product-rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -504,15 +547,12 @@
                                     </div>
                                     <div class="onsale">Best Selling</div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4 order-2">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product8_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product8_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product8_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product8_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -522,34 +562,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
-                                        <div class="product-price">$149</div>
-                                    </div>
-                                    <div class="product-btns">
-                                        <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
-                                        <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
-                                    </div>
-                                    <div class="onnew">New Arrival</div>
-                                </div>                                
-
-                            </div>
-
-                            <div class="col-md-6 col-xl-4 order-2">
-
-                                <div class="product">                                    
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/product9_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product9_2.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>
-                                    <div class="product-details text-center">
-                                        <div class="product-rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
                                         <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
@@ -558,15 +571,12 @@
                                     </div>
                                     <div class="onnew">New Arrival</div>
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-xl-4 order-2">
-
-                                <div class="product">                                    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product10_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product10_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product9_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product9_2.png" alt="Product Image" class="img-fluid w-100"></a>
                                     </div>
                                     <div class="product-details text-center">
                                         <div class="product-rating">
@@ -576,7 +586,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <h3 class="product-title"><a href="#">Dress</a></h3>
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
                                         <div class="product-price">$149</div>
                                     </div>
                                     <div class="product-btns">
@@ -585,9 +595,31 @@
                                     </div>
                                     <div class="onnew">New Arrival</div>
                                 </div>
-
                             </div>
-
+                            <div class="col-md-6 col-xl-4 order-2">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="#"><img src="images/shop/product10_1.png" alt="Product Image" class="img-fluid w-100"></a>
+                                        <a href="#"><img src="images/shop/product10_2.png" alt="Product Image" class="img-fluid w-100"></a>
+                                    </div>
+                                    <div class="product-details text-center">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <h3 class="product-title"><a href="#">Dress lace up 2021 summer women</a></h3>
+                                        <div class="product-price">$149</div>
+                                    </div>
+                                    <div class="product-btns">
+                                        <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+                                        <a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+                                    </div>
+                                    <div class="onnew">New Arrival</div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -601,38 +633,33 @@
                     <div class="container">
 
                         <div class="row">
-
                             <div class="col-12">
                                 <div class="logos">
-                                    <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                                    <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                                    <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                                    <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
-                                    <div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div>
-                                    <div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div></div>
+                                    <div><div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div></div>
                                 </div>
-                            </div>                            
-
+                            </div>
                         </div>
 
                     </div>
                     
-                </div><!-- Partners -->                
+                </div><!-- Partners -->
 
                 <!-- Posts
                 ============================================= -->
                 <div class="section pb-0">
 
-                    <div class="container">    
+                    <div class="container">
                         
                         <div class="heading-block text-center">
                             <h3 class="title">Our News</h3>
                         </div>
-
                         <div class="row">
-
                             <div class="col-md-6 col-lg-8">
-
                                 <article class="post row">
                                     <div class="col-lg-4 d-flex align-items-end order-last order-xl-first">
                                         <div class="post-content">
@@ -647,19 +674,16 @@
                                     <div class="col-lg-8 order-first order-xl-last">
                                         <div class="post-thumbnail">
                                             <a href="#"><img src="images/posts/post1.png" alt="Post Image"></a>
-                                        </div>                
+                                        </div>
                                     </div>
                                 </article>
-
                                 <div class="row">
-
                                     <div class="col-lg-6">
-
                                         <article class="post">
                                             <div class="post-thumbnail">
                                                 <a href="#"><img src="images/posts/post3.png" alt="Post Image"></a>
-                                            </div>                                    
-                                            <div class="post-content">                                                
+                                            </div>
+                                            <div class="post-content">
                                                 <div class="entry-title">
                                                     <h4><a href="#">How to choose accessories for clothes not to overdo it</a></h4>
                                                 </div>
@@ -668,29 +692,21 @@
                                                 </ul>
                                             </div>
                                         </article>
-
                                     </div>
-
                                     <div class="col-lg-6">
-
                                         <article class="post">
                                             <div class="post-thumbnail">
                                                 <a href="#"><img src="images/posts/post4.png" alt="Post Image"></a>
                                             </div>
                                         </article>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                             <div class="col-md-6 col-lg-4">
-
                                 <article class="post">
                                     <div class="post-thumbnail">
                                         <a href="#"><img src="images/posts/post2.png" alt="Post Image"></a>
-                                    </div>                                    
+                                    </div>
                                     <div class="post-content">
                                         <div class="entry-title">
                                             <h4><a href="#">How to choose accessories for clothes not to overdo it</a></h4>
@@ -700,9 +716,7 @@
                                         </ul>
                                     </div>
                                 </article>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -713,22 +727,17 @@
                 ============================================= -->
                 <div class="section pt-0">
 
-                    <div class="container">                        
+                    <div class="container">
 
                         <div class="row">
-
                             <div class="col-xl-4">
-                                
                                 <a href="#" class="ads">
                                     <div class="ads-bg">
                                         <img src="images/ads/ads1.png" alt="Ads Image">
                                     </div>
                                 </a>
-
                             </div>
-
-                            <div class="col-xl-8">                                
-
+                            <div class="col-xl-8">
                                 <div class="ads ads1">
                                     <div class="ads-bg">
                                         <img src="images/ads/ads2.png" alt="Ads Image">
@@ -740,9 +749,7 @@
                                         <a href="#" class="h6 text-secondary body-font fw-semi-bold mb-0 text-uppercase">Shop Now!</a>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -751,7 +758,7 @@
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->
@@ -764,17 +771,14 @@
                 <div class="container">
 
                     <div class="row">
-
                         <div class="col-lg-7 d-flex justify-content-between">
-
                             <div class="widget widget-custom-html">
                                 <h4 class="widget-title text-body text-uppercase">Our Address</h4>
                                 <div class="widget-content">
                                     <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
                                     <p class="mb-0">5686 Edverano Center</p>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="widget widget-social text-end">
                                 <h4 class="widget-title text-body text-uppercase">Follow Us</h4>
                                 <div class="widget-content">
@@ -785,21 +789,16 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="col-lg-5">
-
                             <div class="widget widget-custom-html text-end">
                                 <h4 class="widget-title text-body text-uppercase">Call Now</h4>
                                 <div class="widget-content">
                                     <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
                                     <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                </div>                                    
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
 
                 </div>
@@ -812,10 +811,8 @@
 
                 <div class="container">
 
-                    <div class="row">               
-                        
+                    <div class="row">
                         <div class="col-lg-7">
-
                             <div class="widget widget-links mb-4">
                                 <div class="widget-content">
                                     <ul>
@@ -824,11 +821,9 @@
                                         <li><a href="#">Order Tracking</a></li>
                                         <li><a href="#">Shipping & Delivery</a></li>
                                     </ul>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="col d-flex align-items-center align-items-lg-end justify-content-between flex-column flex-md-row pt-2">
-
                                 <div class="widget widget-payment mt-3">
                                     <div class="widget-content">
                                         <div class="payments">
@@ -836,19 +831,13 @@
                                             <span class="payment-icon paypal"></span>
                                             <span class="payment-icon mastercard"></span>
                                             <span class="payment-icon express"></span>
-                                        </div>                                    
+                                        </div>
                                     </div>
-                                    
                                 </div>
-
                                 <p id="copyrights" class="text-end my-4 my-lg-0">&copy; Copyrights 2021. All Rights Reserved.</p>
-
                             </div>
-                            
                         </div>
-
-                        <div class="col-lg-5">                            
-                                    
+                        <div class="col-lg-5">
                             <div class="widget widget-subscribe">
                                 <h6 class="widget-title text-white text-uppercase lh-lg mb-4">Subscribe to our the free newslettr</h6>
                                 <div class="widget-content">
@@ -860,11 +849,9 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>                                    
-                            </div>        
-                            
+                                </div>
+                            </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -875,16 +862,21 @@
 
     </div>
 
-    <!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
-
     <!-- External JavaScripts
 	============================================= -->
     
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Theme Scripts
+	============================================= -->
+    <script src="js/main.js"></script>
 
     <!-- Footer Scripts
 	============================================= -->

@@ -14,18 +14,3 @@
 /* ----------------------------------------------------------------
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
-
-.history {
-	li {
-		display: flex;
-		align-items: flex-start;
-		padding-left: $spacer;
-		padding-bottom: $spacer * 3.75;
-		
-		h3 {
-			color: #dae0e0;
-			width: 13rem;
-			flex: 1 0 auto;
-		}
-	}
-}

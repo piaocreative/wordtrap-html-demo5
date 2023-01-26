@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
 	============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -23,9 +22,9 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo5 | Saler</title>
+    <title>Demo5 | Wordtrap</title>
 </head>
-<body id="demo5">
+<body id="error-404-page">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -42,7 +41,7 @@
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/logo.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Wordtrap Logo">
                     </a>
                     
                     <!-- Navbar Toggler
@@ -89,35 +88,74 @@
                                 <a href="#" class="nav-link">
                                     <span data-cart-items="2">
                                         <i class="fas fa-shopping-cart"></i>
-                                    </span>                                            
+                                    </span>
                                 </a>
                             </li>
                         </ul><!-- #top-btns -->
 
                         <!-- Primary Navigation
                         ============================================= -->
-                        <ul id="primary-menu" class="navbar-nav">
-                            <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>                                  
+                        <ul id="primary-menu" class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="current nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="current nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
 
-                    </div><!-- #navbarCollapse -->                   
+                    </div><!-- #navbarCollapse -->
 
                 </div>
 
@@ -127,24 +165,19 @@
 
         <!-- Content
 		============================================= -->
-		<section id="content">
+		<main id="content">
 
-            <div class="content-wrap">                           
+            <div class="page-content">
 
                 <div class="container">
 
                     <div class="section">
 
                         <div class="row">
-
                             <div class="col-md-7 text-center">
-    
-                                <img src="images/404.png" alt="404 page" class="img-fluid" />
-
+                                <img src="images/pages/404.png" alt="404 page" class="img-fluid" />
                                 <p class="mt-5 mb-0">We're sorry, but the page you were looking for doesn't exist.</p>
-    
                             </div>
-    
                             <div class="col-md-4 offset-md-1 d-flex align-items-center justify-content-center">
                                 <div class="pt-5 pt-md-0 text-center text-md-start">
                                     <h4 class="lh-1 fw-black">Here are some useful links</h4>
@@ -157,16 +190,15 @@
                                     </ul>
                                 <div>
                             </div>
-    
                         </div>
 
-                    </div>                    
+                    </div>
 
                 </div>
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->
@@ -179,17 +211,14 @@
                 <div class="container">
 
                     <div class="row">
-
                         <div class="col-lg-7 d-flex justify-content-between">
-
                             <div class="widget widget-custom-html">
                                 <h4 class="widget-title text-body text-uppercase">Our Address</h4>
                                 <div class="widget-content">
                                     <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
                                     <p class="mb-0">5686 Edverano Center</p>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="widget widget-social text-end">
                                 <h4 class="widget-title text-body text-uppercase">Follow Us</h4>
                                 <div class="widget-content">
@@ -200,21 +229,16 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="col-lg-5">
-
                             <div class="widget widget-custom-html text-end">
                                 <h4 class="widget-title text-body text-uppercase">Call Now</h4>
                                 <div class="widget-content">
                                     <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
                                     <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                </div>                                    
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
 
                 </div>
@@ -227,10 +251,8 @@
 
                 <div class="container">
 
-                    <div class="row">               
-                        
+                    <div class="row">
                         <div class="col-lg-7">
-
                             <div class="widget widget-links mb-4">
                                 <div class="widget-content">
                                     <ul>
@@ -239,11 +261,9 @@
                                         <li><a href="#">Order Tracking</a></li>
                                         <li><a href="#">Shipping & Delivery</a></li>
                                     </ul>
-                                </div>                                    
+                                </div>
                             </div>
-
                             <div class="col d-flex align-items-end justify-content-between pt-2">
-
                                 <div class="widget widget-payment mt-3">
                                     <div class="widget-content">
                                         <div class="payments">
@@ -251,19 +271,13 @@
                                             <span class="payment-icon paypal"></span>
                                             <span class="payment-icon mastercard"></span>
                                             <span class="payment-icon express"></span>
-                                        </div>                                    
+                                        </div>
                                     </div>
-                                    
                                 </div>
-
                                 <p id="copyrights" class="text-end mb-0">&copy; Copyrights 2021. All Rights Reserved.</p>
-
                             </div>
-                            
                         </div>
-
-                        <div class="col-lg-5">                            
-                                    
+                        <div class="col-lg-5">
                             <div class="widget widget-subscribe">
                                 <h6 class="widget-title text-white text-uppercase lh-lg mb-4">Subscribe to our the free newslettr</h6>
                                 <div class="widget-content">
@@ -275,11 +289,9 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>                                    
-                            </div>        
-                            
+                                </div>
+                            </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -289,11 +301,6 @@
         </footer><!-- #footer -->
 
     </div>
-
-    <!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
 
     <!-- External JavaScripts
 	============================================= -->

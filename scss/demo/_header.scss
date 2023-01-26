@@ -17,6 +17,7 @@
 
 
 #header {
+	background-color: $white;
 	position: relative;	
 
 	// Transparent header
@@ -72,7 +73,7 @@
 	margin-right: $spacer * 2.25;
 
 	img {
-		max-width: 6.5rem;
+		max-width: 9.375rem;
 	}
 }
 
@@ -83,13 +84,7 @@
 
 #primary-menu {
 	.nav-link {
-		color: $primary-menu-font-color;
-		display: block;
-		font-family: $primary-menu-font;
-		font-weight: $primary-menu-font-weight;
-		font-size: $primary-menu-font-size;
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;	
+		display: block;		
 		padding: $spacer * 0.5 $spacer;	
 		
 		@include media-breakpoint-up(xl) {			
@@ -104,6 +99,51 @@
 		&.current,
 		&:hover {
 			background-color: $theme-color;			
+		}
+
+		.dropdown-menu {
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			background-color: transparent;
+			padding: 0;
+	
+			@include media-breakpoint-up(xl) {
+				background-color: $white;
+				display: block;
+				min-width: 14rem;
+				top: -1000px;
+				opacity: 0;
+	
+				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
+				@include transition(transform .2s ease-out);
+				@include translate3d(0, -20px, 0);
+			}
+			
+			.nav-item {
+				a {
+					border: none;
+					padding: 0.75rem 1.125rem;
+				}
+				
+				&.current,
+				&:hover {
+					background-color: $theme-color;
+				}
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			&.dropdown:hover {
+				.dropdown-menu {
+					top: auto;
+					left: auto;
+    				right: 0;
+					opacity: 1;
+	
+					@include translate3d(0, 0, 0);
+				}
+			}
 		}
 	}
 }
@@ -164,7 +204,7 @@
 		}
 
 		a.dropdown-item {
-			color: $heading-color;
+			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
 			font-size: 0.75rem;				
@@ -195,7 +235,7 @@
 
 	.phone-number {
 		a {
-			color: $heading-color;
+			color: $headings-color;
 			font-size: 1rem;
 			font-weight: 600;
 
