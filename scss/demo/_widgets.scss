@@ -26,7 +26,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		margin-bottom: $spacer * 0.5;
-	}	
+	}
 
 	// Widget - Social
 	&.widget-social {
@@ -39,25 +39,25 @@
 				&:last-child {
 					padding-right: 0;
 				}
-		
+
 				a {
-					background-color: #292724;					
+					background-color: #292724;
 					color: $light;
 					display: inline-block;
 					line-height: 1.8125rem;
 					width: 1.8125rem;
-					height: 1.8125rem;		
+					height: 1.8125rem;
 					vertical-align: middle;
 					text-align: center;
 
 					@include border-radius(50%);
 					@include transition(all 0.3s ease-in-out);
-		
+
 					&:hover {
 						background-color: $theme-color;
 						color: $white;
 					}
-		
+
 					i {
 						vertical-align: top;
 						line-height: 1.8125rem;
@@ -83,7 +83,7 @@
 					color: $white;
 					font-size: 0.875rem;
 					font-weight: 600;
-					text-transform: uppercase;					
+					text-transform: uppercase;
 
 					&:hover {
 						color: $theme-color;
@@ -106,8 +106,8 @@
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: $spacer * 0.25;
-				height: 2rem;		
-				width: 3.5rem;		
+				height: 2rem;
+				width: 3.5rem;
 
 				@include border-radius(0.25rem);
 

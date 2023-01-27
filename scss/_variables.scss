@@ -14,7 +14,7 @@
 
 $theme-color:					 			#ffc83a;
 $body-color:					 			#7d7b78;
-$headings-color:				  			#302f2d;
+$headings-color:							#302f2d;
 
 
 //-------------------- Font Families --------------------//
@@ -26,7 +26,7 @@ $heading-font:								'Playfair Display', sans-serif;
 //-------------------- Redefine Bootstrap Variables ------------//
 
 // Theme Colors
-$primary:						  			$theme-color;
+$primary:									$theme-color;
 $secondary:									#ea0909;
 $dark:										#282828;
 $light:										#acacac;
@@ -38,7 +38,7 @@ $body-bg:									#f5f7f7;
 $grid-gutter-width:				 			1.875rem;
 
 // Link
-$link-color:					  			$headings-color;
+$link-color:								$headings-color;
 $link-decoration:							none;
 $link-hover-color:							$theme-color;
 
@@ -100,7 +100,7 @@ $btn-padding-y-sm:						 	0.75rem;
 $btn-padding-x-sm:							2.67rem;
 $btn-font-size-sm:							0.583rem;
 
-$btn-padding-y-lg:				  			1.5rem;
+$btn-padding-y-lg:							1.5rem;
 $btn-padding-x-lg:							5.33rem;
 $btn-font-size-lg:							1.17rem;
 
@@ -135,7 +135,7 @@ $nav-link-hover-color:				 		$theme-color;
 $nav-tabs-border-color:						$theme-color;
 $nav-tabs-border-width:						2px;
 $nav-tabs-border-radius:					0;
-$nav-tabs-link-hover-border-color:		  	$theme-color;
+$nav-tabs-link-hover-border-color:			$theme-color;
 $nav-tabs-link-active-color:			 	$theme-color;
 $nav-tabs-link-active-border-color:		 	$theme-color;
 
@@ -146,17 +146,17 @@ $accordion-padding-x:						2.25rem;
 $accordion-color:							$theme-color;
 $accordion-bg:							 	#ffffff;
 $accordion-border-width:					0;
-$accordion-border-radius:				  	0;
+$accordion-border-radius:					0;
 
 $accordion-button-color:					#171717;
 $accordion-button-bg:						transparent;
 $accordion-button-active-bg:			 	transparent;
 $accordion-button-active-color:				$theme-color;
 
-$accordion-button-focus-border-color:	  	none;
+$accordion-button-focus-border-color:		none;
 $accordion-button-focus-box-shadow:			none;
 
-$accordion-icon-width:					  	1.25rem;
+$accordion-icon-width:						1.25rem;
 $accordion-icon-color:					 	$body-color;
 
 
@@ -165,13 +165,13 @@ $pagination-bg:								transparent;
 $pagination-padding-y:					 	1rem;
 $pagination-padding-x:					 	1rem;
 $pagination-border-radius:				 	0.5rem;
-$pagination-border-width:				  	0;
+$pagination-border-width:					0;
 
 $pagination-hover-color:					#FFFFFF;
 $pagination-hover-bg:						$theme-color;
 
-$pagination-active-color:				  	#FFFFFF;
-$pagination-active-bg:					  	$theme-color;
+$pagination-active-color:					#FFFFFF;
+$pagination-active-bg:						$theme-color;
 
 
 // Options

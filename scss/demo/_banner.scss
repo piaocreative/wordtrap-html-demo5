@@ -41,14 +41,14 @@
 				.left-col,
 				.right-col {
 					position: relative;
-					
+
 					img {
 						width: 100%;
 						height: auto;
 						opacity: 0.7;
 					}
 				}
-				
+
 				.left-col {
 					img {
 						@include media-breakpoint-up(lg) {
@@ -112,7 +112,7 @@
 						margin-left: 2.5rem;
 						margin-right: 1rem;
 					}
-		
+
 					> a {
 						font-family: $body-font;
 						font-size: 0.875rem;
@@ -134,13 +134,13 @@
 					margin-right: 3.75rem;
 					padding: 2rem 0;
 				}
-	
+
 				span,
 				a {
 					font-size: 0.875rem;
 					text-transform: uppercase;
 				}
-	
+
 				span {
 					color: $light;
 				}

@@ -21,11 +21,11 @@
 -----------------------------------------------------------------*/
 
 .category {
-	position: relative;		
+	position: relative;
 	margin-bottom: $spacer * 1.875;
 
 	@include transition(all 0.5s ease-in-out);
-	
+
 	&:hover {
 		@include translateY(-1.875rem);
 	}
@@ -33,7 +33,7 @@
 	.category-desc {
 		position: absolute;
 		left: 0;
-		top: 2rem;		
+		top: 2rem;
 		width: 100%;
 		z-index: 1;
 	}
@@ -63,7 +63,7 @@
 	}
 
 	.product-details {
-		padding: $spacer * 1.25 0;		
+		padding: $spacer * 1.25 0;
 	}
 
 	.product-price {
@@ -103,7 +103,7 @@
 		right: 0;
 		top: 0;
 		padding: 1rem 0.125rem;
-		opacity: 0;					
+		opacity: 0;
 		z-index: 2;
 
 		@include transition(all 0.3s ease-in-out);
@@ -115,7 +115,7 @@
 		color: $headings-color;
 		padding: 0 $spacer * 0.875;
 
-		@include transition(all 0.3s ease-in-out);		
+		@include transition(all 0.3s ease-in-out);
 
 		&:hover {
 			color: $secondary;
@@ -140,7 +140,7 @@
 		left: 0;
 		top: 0;
 		z-index: 2;
-		
+
 		@include transition(all 0.3s ease-in-out);
 	}
 
@@ -185,7 +185,7 @@
 
 		img {
 			width: 100%;
-			height: auto;			
+			height: auto;
 		}
 	}
 
@@ -207,10 +207,10 @@
 
 			@include media-breakpoint-down(lg) {
 				h3 {
-					
+
 				}
 			}
-		}		
+		}
 	}
 }
 
@@ -261,7 +261,7 @@
 			}
 		}
 	}
-	
+
 	.product-filter-size {
 		ul li {
 			display: inline-block;
@@ -294,7 +294,7 @@
 					&::after {
 						display: none;
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -309,7 +309,7 @@
 	#comments {
 		.reviews-title {
 			font-size: 1.125rem;
-			
+
 			span {
 				color: $body-color;
 				font-family: $body-font;
@@ -393,7 +393,7 @@
 		background-color: $white;
 	}
 
-	td, th {			
+	td, th {
 		padding: 1rem;
 	}
 

@@ -18,7 +18,7 @@
 
 #header {
 	background-color: $white;
-	position: relative;	
+	position: relative;
 
 	// Transparent header
 	&.transparent-header {
@@ -31,7 +31,7 @@
 				margin-bottom: -$header-height;
 				position: relative;
 			}
-		}		
+		}
 	}
 }
 
@@ -46,9 +46,9 @@
 		border-color: transparent;
 
 		&:focus {
-			box-shadow: none;			
+			box-shadow: none;
 		}
-	}	
+	}
 }
 
 .navbar {
@@ -84,10 +84,10 @@
 
 #primary-menu {
 	.nav-link {
-		display: block;		
-		padding: $spacer * 0.5 $spacer;	
-		
-		@include media-breakpoint-up(xl) {			
+		display: block;
+		padding: $spacer * 0.5 $spacer;
+
+		@include media-breakpoint-up(xl) {
 			line-height: 1;
 			padding: $primary-menu-padding $spacer * 2;
 		}
@@ -98,7 +98,7 @@
 
 		&.current,
 		&:hover {
-			background-color: $theme-color;			
+			background-color: $theme-color;
 		}
 
 		.dropdown-menu {
@@ -107,25 +107,25 @@
 			box-shadow: none;
 			background-color: transparent;
 			padding: 0;
-	
+
 			@include media-breakpoint-up(xl) {
 				background-color: $white;
 				display: block;
 				min-width: 14rem;
 				top: -1000px;
 				opacity: 0;
-	
+
 				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
 				@include transition(transform .2s ease-out);
 				@include translate3d(0, -20px, 0);
 			}
-			
+
 			.nav-item {
 				a {
 					border: none;
 					padding: 0.75rem 1.125rem;
 				}
-				
+
 				&.current,
 				&:hover {
 					background-color: $theme-color;
@@ -140,7 +140,7 @@
 					left: auto;
 					right: 0;
 					opacity: 1;
-	
+
 					@include translate3d(0, 0, 0);
 				}
 			}
@@ -152,7 +152,7 @@
 	Mega Menu
 -----------------------------------------------------------------*/
 
-// Please ignore mega menu now 
+// Please ignore mega menu now
 
 
 /* ----------------------------------------------------------------
@@ -160,19 +160,19 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {			
+	.nav-item {
 		@include media-breakpoint-up(xl) {
-			padding-right: $spacer * 1.875;		
+			padding-right: $spacer * 1.875;
 		}
 	}
 
 	a.nav-link {
 		color: $topbar-color;
 		display: block;
-		font-size: 0.75rem;	
-		
+		font-size: 0.75rem;
+
 		@include media-breakpoint-up(xl) {
-			padding: 0;		
+			padding: 0;
 		}
 
 		&:hover {
@@ -191,7 +191,7 @@
 		border: 0;
 		top: 1.875rem;
 		left: 0;
-		width: 100%;		
+		width: 100%;
 		margin: 0;
 		border-top: 3px solid $link-hover-color;
 
@@ -207,7 +207,7 @@
 			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
-			font-size: 0.75rem;				
+			font-size: 0.75rem;
 			padding: 0 $spacer * 0.75;
 
 			&:hover {
@@ -267,7 +267,7 @@
 	@include media-breakpoint-down(xl) {
 		padding: $spacer 0;
 	}
-	
+
 	.nav-link {
 		color: $top-btn-font-color;
 		font-size: $top-btn-font-size;

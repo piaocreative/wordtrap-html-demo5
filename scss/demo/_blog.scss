@@ -42,12 +42,12 @@
 	h4 {
 		font-family: $body-font;
 		font-weight: 300;
-		line-height: $line-height-sm;		
+		line-height: $line-height-sm;
 		margin-bottom: $spacer * 0.625;
 
 		a {
 			color: $headings-color;
-			
+
 			&:hover { color: $theme-color; }
 		}
 	}
@@ -78,7 +78,7 @@
 #single-post {
 	.post {
 		margin-bottom: $spacer;
-		
+
 		.post-content {
 			padding: 2.5rem 0;
 			display: block;
