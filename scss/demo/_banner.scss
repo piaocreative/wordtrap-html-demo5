@@ -16,145 +16,145 @@
 -----------------------------------------------------------------*/
 
 
-.banner {    
-    position: relative;           
+.banner {
+	position: relative;
 
-    &#home-banner {
-        overflow: hidden;
+	&#home-banner {
+		overflow: hidden;
 
-        #banner-slider {
-            .slick-list {
-                overflow: initial;
-            }
+		#banner-slider {
+			.slick-list {
+				overflow: initial;
+			}
 
-            .banner-slide {
-                position: relative;
+			.banner-slide {
+				position: relative;
 
-                @include media-breakpoint-up(lg) {
-                    height: 47.5rem;
+				@include media-breakpoint-up(lg) {
+					height: 47.5rem;
 
-                    .row {
-                        height: 100%;
-                    }
-                }
+					.row {
+						height: 100%;
+					}
+				}
 
-                .left-col,
-                .right-col {
-                    position: relative;
-                    
-                    img {
-                        width: 100%;
-                        height: auto;
-                        opacity: 0.7;
-                    }
-                }
-                
-                .left-col {
-                    img {
-                        @include media-breakpoint-up(lg) {
-                            position: absolute;
-                            right: -7.5rem;
-                            top: 0;
-                            width: calc(100% + 7.5rem);
-                            height: 100%;                        
-                            object-fit: cover;
-                            object-position: center;
-                            opacity: 1;
-                            z-index: 0;
-                        }
-                    }
-                }
+				.left-col,
+				.right-col {
+					position: relative;
+					
+					img {
+						width: 100%;
+						height: auto;
+						opacity: 0.7;
+					}
+				}
+				
+				.left-col {
+					img {
+						@include media-breakpoint-up(lg) {
+							position: absolute;
+							right: -7.5rem;
+							top: 0;
+							width: calc(100% + 7.5rem);
+							height: 100%;
+							object-fit: cover;
+							object-position: center;
+							opacity: 1;
+							z-index: 0;
+						}
+					}
+				}
 
-                .right-col {
-                    img {
-                        @include media-breakpoint-up(lg) {
-                            position: absolute;
-                            left: 0;
-                            bottom: -3.125rem;
-                            width: 100%;
-                            opacity: 1;
-                        }
-                    }                    
-                }
-            }
-        }
+				.right-col {
+					img {
+						@include media-breakpoint-up(lg) {
+							position: absolute;
+							left: 0;
+							bottom: -3.125rem;
+							width: 100%;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
 
-        .banner-content {            
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
+		.banner-content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
 
-            .banner-content-wrapper {
-                padding-top: 5.375rem;
-            }
+			.banner-content-wrapper {
+				padding-top: 5.375rem;
+			}
 
-            h2 {
-                font-size: 6.875rem;
-                font-weight: 900;
-                line-height: 8.25rem;
-                margin-bottom: 0;
-                display: flex;
-                align-items: center;
+			h2 {
+				font-size: 6.875rem;
+				font-weight: 900;
+				line-height: 8.25rem;
+				margin-bottom: 0;
+				display: flex;
+				align-items: center;
 
-                > span {
-                    display: flex;
-                    align-items: center;
-                    line-height: 1;
+				> span {
+					display: flex;
+					align-items: center;
+					line-height: 1;
 
-                    @include translateY(1rem);
+					@include translateY(1rem);
 
-                    > hr {
-                        background-color: $headings-color;
-                        display: block;
-                        width: 3.125rem;
-                        height: 2px;
-                        margin-left: 2.5rem;
-                        margin-right: 1rem;
-                    }
-        
-                    > a {
-                        font-family: $body-font;
-                        font-size: 0.875rem;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                    }
-                }
-            }           
-        }
+					> hr {
+						background-color: $headings-color;
+						display: block;
+						width: 3.125rem;
+						height: 2px;
+						margin-left: 2.5rem;
+						margin-right: 1rem;
+					}
+		
+					> a {
+						font-family: $body-font;
+						font-size: 0.875rem;
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
 
-        .banner-socials {            
-            z-index: 2;
+		.banner-socials {
+			z-index: 2;
 
-            .socials {
-                display: flex;
-                align-items: center;
+			.socials {
+				display: flex;
+				align-items: center;
 
-                li:not(:last-child) {
-                    margin-right: 3.75rem;
-                    padding: 2rem 0;
-                }
-    
-                span,
-                a {
-                    font-size: 0.875rem;                    
-                    text-transform: uppercase;
-                }
-    
-                span {
-                    color: $light;                
-                }
-            }
-        }
-    }
+				li:not(:last-child) {
+					margin-right: 3.75rem;
+					padding: 2rem 0;
+				}
+	
+				span,
+				a {
+					font-size: 0.875rem;
+					text-transform: uppercase;
+				}
+	
+				span {
+					color: $light;
+				}
+			}
+		}
+	}
 
-    &#about-banner {
-        background-image: url(../images/banner/about_banner_bg.png);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        height: auto;
-        padding-top: $spacer * 4.625;
-        padding-bottom: $spacer * 7.125;
-    }
+	&#about-banner {
+		background-image: url(../images/banner/about_banner_bg.png);
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+		height: auto;
+		padding-top: $spacer * 4.625;
+		padding-bottom: $spacer * 7.125;
+	}
 }
