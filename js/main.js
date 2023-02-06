@@ -125,16 +125,23 @@ $( document ).ready( function() {
 
 	// QTY
 	if ( $('.quantity').length ) {
-		$('.quantity  #plus-btn').click(function(evt) {
-			evt.preventDefault();
-			$('.qty').val(parseInt($('.qty').val()) + 1 );
-		});
-		$('.quantity #minus-btn').click(function(evt) {
-			evt.preventDefault();
-			$('.qty').val(parseInt($('.qty').val()) - 1 );
-			if ($('.qty').val() == 0) {
-				$('.qty').val(1);
-			}
+		$('.quantity').each(function() {
+			var $this = $(this);
+			var $qty = $this.find('.qty');
+			var $plusBtn = $this.find('#plus-btn');
+			var $minusBtn = $this.find('#minus-btn');
+
+			$plusBtn.click(function(evt) {
+				evt.preventDefault();
+				$qty.val(parseInt($qty.val()) + 1 );
+			});
+			$minusBtn.click(function(evt) {
+				evt.preventDefault();
+				$qty.val(parseInt($qty.val()) - 1 );
+				if ($qty.val() == 0) {
+					$qty.val(1);
+				}
+			});
 		});
 	}
 
